@@ -185,32 +185,9 @@ double run(int size) {
     double y = 0;
 
     for (int i = 0; i < size; ++i) {
-      gen_rand();
+      printf("%f\n", gen_rand());
     }
     y = gen_rand();
     return y;
 }
 
-/*
-int main(int argc, char** argv)
-{
-    stopwatch sw;
-    int n;
-    double y;
-
-    if (argc < 2) {
-        printf("usage: %s x\n", argv[0]);
-        return 0;
-    }
-
-    n = atoi(argv[1]); 
-
-    init_genrand(1337);
-
-    stopwatch_start(&sw);
-    y = run(n);
-    stopwatch_stop(&sw);
-    printf("{ \"time\": %f, \"output\": %f }\n", get_interval_by_sec(&sw), y);
-    return 0;
-}
-*/
