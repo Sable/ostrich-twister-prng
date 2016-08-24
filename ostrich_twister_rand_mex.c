@@ -5,7 +5,7 @@ int ostrich_seed_initialized = 0;
 
 void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[]){
     if (!ostrich_seed_initialized) {
-        init_genrand(1337);
+        init_genrand(5489UL);
         ostrich_seed_initialized = 1;
     }
 
