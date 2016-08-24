@@ -1,5 +1,5 @@
 #include <mex.h>
-#include "./ostrich_rand.c"
+#include "./ostrich_twister_rand.c"
 
 int ostrich_seed_initialized = 0;
 
