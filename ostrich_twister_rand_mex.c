@@ -1,14 +1,7 @@
 #include <mex.h>
 #include "./ostrich_twister_rand.c"
 
-int ostrich_seed_initialized = 0;
-
 void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[]){
-    if (!ostrich_seed_initialized) {
-        init_genrand(5489UL);
-        ostrich_seed_initialized = 1;
-    }
-
     double* m;
     if (nrhs == 0) {
         plhs[0] = mxCreateDoubleMatrix(1,1,mxREAL);
