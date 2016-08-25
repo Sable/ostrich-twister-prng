@@ -1,5 +1,5 @@
 ostrich-twister-prng.js:
-	emcc mt19937ar.c -o ostrich-twister-prng.js -s EXPORTED_FUNCTIONS="['_gen_rand', '_init_genrand']" --post-js post-js.js --pre-js pre-js.js
+	emcc ostrich_twister_rand.c -o ostrich-twister-prng.js -s EXPORTED_FUNCTIONS="['_ostrich_rand_double', '_ostrich_rand_seed', '_ostrich_rand_matrix']" --post-js post-js.js --pre-js pre-js.js
 
 browserify-module: ostrich-twister-prng.js
 	browserify node-module.js -s twister > twister.js

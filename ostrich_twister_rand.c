@@ -187,3 +187,7 @@ void ostrich_rand_matrix(double* matrix, int row_nb, int col_nb) {
         }
     }  
 }
+
+void ostrich_rand_seed(unsigned long seed) {
+    init_genrand(seed);
+}
