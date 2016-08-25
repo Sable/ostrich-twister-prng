@@ -10,5 +10,5 @@ browserify-example: ostrich-twister-prng.js
 	echo '<html><body><script src="node-example-bundle.js"></script></body></html>' > browser-example.html
 
 c-example:
-	cat mt19937ar.c main.c > c-example.c
+	cat ostrich_twister_rand.c main.c > c-example.c
 	gcc c-example.c -o c-example

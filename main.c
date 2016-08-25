@@ -10,8 +10,9 @@ int main(int argc, char** argv)
 
     n = atoi(argv[1]); 
 
-    init_genrand(1337);
+    for (int i = 0; i < 10; ++i) {
+        printf("%f\n", ostrich_rand_double());
+    }
 
-    y = run(n);
     return 0;
 }
