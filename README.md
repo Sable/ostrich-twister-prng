@@ -31,7 +31,7 @@ All the following examples should print the following 10 numbers with more or le
 
 # Matlab example (type in a Matlab console)
 
-    rng(5489)
+    rng(5489); % May be omitted, this is the default seed
     for i=1:10; 
         disp(rand()); 
     end
